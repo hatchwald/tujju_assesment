@@ -32,6 +32,6 @@ class JobVacancies extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('job_vacancies');
     }
 }

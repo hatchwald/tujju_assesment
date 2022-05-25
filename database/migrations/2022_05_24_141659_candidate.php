@@ -19,6 +19,8 @@ class Candidate extends Migration
             $table->string('skill');
             $table->string('cv');
             $table->string('about');
+            $table->string('email');
+            $table->string('phone_number');
             $table->longText('experience');
             $table->bigInteger('sallary');
             $table->timestamps();
@@ -32,6 +34,6 @@ class Candidate extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('candidates');
     }
 }

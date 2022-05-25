@@ -29,6 +29,6 @@ class Application extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('applications');
     }
 }
